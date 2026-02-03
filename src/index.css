@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-bg-deep text-text-primary font-mono antialiased;
+  }
+}
+
+/* Custom visual polish */
+::selection {
+  @apply bg-accent-freedom text-bg-deep;
+}
