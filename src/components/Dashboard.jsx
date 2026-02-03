@@ -12,7 +12,7 @@ const Dashboard = () => {
     const needsOnboarding = !userProfile.isOnboardingComplete;
 
     return (
-        <div className="min-h-screen bg-bg-deep text-text-primary p-4 sm:p-8 font-mono relative overflow-hidden">
+        <div className="min-h-screen bg-bg-deep text-text-primary p-4 sm:p-8 pb-20 font-mono relative overflow-hidden">
             {/* BACKGROUND DECORATION */}
             <div className="absolute inset-0 pointer-events-none opacity-5">
                 <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
@@ -93,6 +93,25 @@ const Dashboard = () => {
                     )}
                 </AnimatePresence>
             </div>
+
+            {/* FOOTER BAR */}
+            <footer className="fixed bottom-0 left-0 right-0 bg-bg-card/90 backdrop-blur-sm border-t border-text-muted/20 py-3 px-4 sm:px-8 z-50">
+                <div className="max-w-6xl mx-auto flex items-center justify-between">
+                    <div className="flex items-center gap-3">
+                        <img
+                            src="/favicon.png"
+                            alt="Anti-Budget Terminal Logo"
+                            className="w-8 h-8 object-contain"
+                        />
+                        <span className="text-xs text-text-muted uppercase tracking-widest hidden sm:inline">
+                            Time {">"} Money
+                        </span>
+                    </div>
+                    <span className="text-xs text-text-muted">
+                        © {new Date().getFullYear()} Anti-Budget Terminal
+                    </span>
+                </div>
+            </footer>
         </div>
     );
 };
