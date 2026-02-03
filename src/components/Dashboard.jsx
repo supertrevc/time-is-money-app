@@ -6,6 +6,7 @@ import TransactionList from './TransactionList';
 import SubscriptionList from './SubscriptionList';
 import { useUser } from '../context/UserContext';
 import { AnimatePresence, motion } from 'framer-motion';
+import logoImage from '/favicon.png?url';
 
 const Dashboard = () => {
     const { userProfile } = useUser();
@@ -99,7 +100,7 @@ const Dashboard = () => {
                 <div className="max-w-6xl mx-auto flex items-center justify-between">
                     <div className="flex items-center gap-3">
                         <img
-                            src="/favicon.png"
+                            src={logoImage}
                             alt="Anti-Budget Terminal Logo"
                             className="w-8 h-8 object-contain"
                         />
