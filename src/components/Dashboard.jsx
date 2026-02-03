@@ -6,7 +6,7 @@ import TransactionList from './TransactionList';
 import SubscriptionList from './SubscriptionList';
 import { useUser } from '../context/UserContext';
 import { AnimatePresence, motion } from 'framer-motion';
-import logoImage from '/favicon.png?url';
+import logoImage from '../assets/logo.png';
 
 const Dashboard = () => {
     const { userProfile } = useUser();
